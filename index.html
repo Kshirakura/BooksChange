@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Books Change</title>
+    <meta name="description" content="iam dummy-site">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Kosugi&family=Spartan:wght@500&family=Yomogi&display=swap" rel="stylesheet">
+    <!--google font-->
+  </head>
+  <body>
+    <div class="container">
+      <header id="header">
+        <img class="mainvisual" src="img/mainvisual.jpg" alt="mainvisual">
+        <div class="inner">
+          <h1 class="site-title">Books <span>Change</span></h1>
+          <ul class="flex-items">
+            <li class="btn signup-show">
+              新規登録
+            </li>
+            <li class="btn login-show">
+              ログイン
+            </li>
+          </ul>
+        </div>
+        <div class="copy">
+          <p>この時代に、<br>紙の本。</p>
+        </div>
+      </header>
+      <main>
+        <div class="inner">
+          <div id="about">
+            <h2 class="content-title">Books Changeとは</h2>
+            <p>どこかの誰かのおすすめの本が読めるサービスです。<br>
+              あなたの本を1冊送っていただければ、その本を誰かに送り、<br>
+              代わりに1冊あなたに誰かの本をお送りします。 </p>
+          </div>
+          <div id="features">
+            <div class="flex-items">
+              <div class="text">
+                <h3 class="content-title">
+                  外に出る必要なし。
+                </h3>
+                <p>情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。とかくに人の世は住みにくい。意地を</p>
+              </div>
+              <div class="pic">
+                <img src="img/no_go_out.jpg">
+              </div>
+            </div>
+            <div class="flex-items">
+              <div class="text">
+                <h3 class="content-title">
+                  手元に残す/残さない
+                </h3>
+                <p>情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。とかくに人の世は住みにくい。意地を</p>
+              </div>
+              <div class="pic">
+                <img src="img/keep_or_not.jpg">
+              </div>
+            </div>
+            <div class="flex-items">
+              <div class="text">
+                <h3 class="content-title">
+                  選べるジャンル
+                </h3>
+                <p>情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。とかくに人の世は住みにくい。意地を</p>
+              </div>
+              <div class="pic">
+                <img src="img/genre.jpg">
+              </div>
+            </div>
+            <div class="flex-items">
+              <div class="text">
+                <h3 class="content-title">
+                  読み放題/1冊から
+                </h3>
+                <p>情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。とかくに人の世は住みにくい。意地を</p>
+              </div>
+              <div class="pic">
+                <img src="img/one_or_many.jpg">
+              </div>
+            </div>
+          </div> <!--features-->
+        </div> <!--inner-->
+        <div class="start-btn signup-show">
+          <a class="btn">
+            今すぐ始める
+          </a>
+        </div>
+      </main>
+    </div> <!--container-->
+
+    <!-- モーダル部分 -->
+    <div id ="signup-modal" class="signup-modal-wrapper">
+      <div class="modal">
+        <div id="close-modal">
+          <span class="close-btn"></span>
+        </div>
+        <div id ="signup-form">
+          <h2 class="content-title">E-mailで新規登録</h2>
+          <form action="#">
+            <input class="form-control" type ="text" placeholder="メールアドレス">
+            <input class="form-control" type ="text" placeholder="パスワード">
+            <div id="submit-btn">新規登録</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- モーダルここまで -->
+
+    <!-- モーダル部分 -->
+    <div id ="login-modal" class="signup-modal-wrapper">
+      <div class="modal">
+        <div id="close-modal">
+          <span class="close-btn"></span>
+        </div>
+        <div id ="signup-form">
+          <h2 class="content-title">ログイン</h2>
+          <form action="#">
+            <input class="form-control" type ="text" placeholder="メールアドレス">
+            <input class="form-control" type ="text" placeholder="パスワード">
+            <div id="login-btn">ログイン</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- モーダルここまで -->
+
+    <footer id="footer">
+      <div class="inner">
+        <div class="flex-items">
+        <ul>
+          <li>よくあるご質問</li>
+          <li>法的事項</li>
+          <li>利用規約</li>
+          <li>お問い合せ</li>
+        </ul>
+        <ul>
+          <li>ヘルプセンター</li>
+          <li>アカウント</li>
+          <li>プライバシー</li>
+          <li>特定商取引法に基づく表示</li>
+        </ul>
+      </div>
+      </div>
+      <p>&copy;Books Change</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
