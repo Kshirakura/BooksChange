@@ -149,18 +149,18 @@ header
   text-align: center;
 }
 
-#signup-form {
+.signup-form {
   width: 100%;
 }
 
-#signup-form h2 {
+.signup-form h2 {
   color: #273469;
   letter-spacing: 1px;
   margin-top: 10px;
   margin-bottom: 30px;
 }
 
-#signup-form input {
+.signup-form input {
   width: 320px;
   margin-bottom: 20px;
   font-size: 12px;
@@ -361,18 +361,18 @@ SP
 
   }
   
-  #signup-form {
+  .signup-form {
     width: 100%;
   }
   
-  #signup-form h2 {
+  .signup-form h2 {
     color: #273469;
     letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 30px;
   }
   
-  #signup-form input {
+  .signup-form input {
     width: 55vw;
     margin-bottom: 20px;
     font-size: 12px;
