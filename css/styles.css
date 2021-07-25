@@ -108,6 +108,8 @@ header
 #header .copy {
   position: absolute;
   writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
   top: 30vh;
   right: 18%;
   color: #333;
