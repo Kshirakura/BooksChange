@@ -36,6 +36,10 @@ li {
   display: flex;
 }
 
+p {
+  margin:0;
+}
+
 /* ---------------
 ここから個別css 
 -----------------*/
@@ -47,7 +51,6 @@ header
 #header {
   margin-bottom: 60px;
   position: relative;
-  margin: 0 auto;
   max-width: 1920px;
 }
 
@@ -343,9 +346,6 @@ SP
     top:35vh;
     right: 20%;
     color: #fffff0;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
   }
 }
 
@@ -478,11 +478,8 @@ SP
   #header .copy {
     font-size: 1.5rem;
     top:30vh;
-    right: 32vw;
+    right: 20vw;
     color: #fffff0;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
   }
 
   #about {
