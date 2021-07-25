@@ -144,7 +144,7 @@ header
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #e6ecf0;
+  background-color: #fffff0;
   padding: 20px 0 40px;
   border-radius: 10px;
   width: 450px;
@@ -269,6 +269,10 @@ features
 
 #features .pic {
   width: 50%;
+}
+
+#features .pic img {
+  border-radius: 5%;
 }
 
 #features .content-title {
