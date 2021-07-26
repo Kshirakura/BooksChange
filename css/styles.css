@@ -1,4 +1,10 @@
 @charset "utf-8";
+
+/* google-font */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Kosugi&family=M+PLUS+Rounded+1c&family=Spartan:wght@500&display=swap');
+/* google-font */
+
+
 html {
   font-size: 100%;
   box-sizing: border-box;
