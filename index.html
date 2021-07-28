@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="apple-touch-icon" href="img/book-icon.png">
     <meta property="og:type" content="blog">
-    <meta property="og:description" content="books changeはどこかの誰かのおすすめの本が読めるサービスです。あなたの本を1冊送っていただければ、その本を誰かに送り、代わりに1冊あなたに誰かの本をお送りします。">
+    <meta property="og:description" content="Books Changeはどこかの誰かのおすすめの本が読めるサービスです。あなたの本を1冊送っていただければ、その本を誰かに送り、代わりに1冊あなたに誰かの本をお送りします。">
     <meta property="og:title" content="Books Change">
     <meta property="og:url" content="https://kshirakura.github.io/BooksChange/">
     <meta property="og:image" content="https://kshirakura.github.io/BooksChange/img/mainvisual.jpg">
@@ -22,7 +22,10 @@
       <header id="header">
         <img class="mainvisual" src="img/mainvisual.jpg" alt="mainvisual">
         <div class="inner">
-          <h1 class="site-title">Books <span>Change</span></h1>
+          <h1 class="site-title"><a class="menu-show"><img src="img/logo.svg" alt="Books Change"></a></h1>
+          <div class="copy">
+            <p>どこかの誰かと、本の交換</p>
+          </div>
           <ul class="flex-items">
             <li class="btn signup-show">
               新規登録
@@ -31,9 +34,6 @@
               ログイン
             </li>
           </ul>
-        </div>
-        <div class="copy">
-          <p>この時代に、<br>紙の本。</p>
         </div>
       </header>
       <main>
@@ -50,7 +50,7 @@
                 <h3 class="content-title">
                   外に出る必要なし。
                 </h3>
-                <p>情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。とかくに人の世は住みにくい。意地を</p>
+                <p>本が欲しくなっても、本を買いに行くのは少し面倒？ Books Changeなら、家にいるだけで本を送ったり受け取ったりできます。</p>
               </div>
               <div class="pic">
                 <img src="img/no_go_out.jpg" alt="no_go_out">
@@ -61,7 +61,7 @@
                 <h3 class="content-title">
                   手元に残す/残さない
                 </h3>
-                <p>情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。とかくに人の世は住みにくい。意地を</p>
+                <p>買った本を読んで名作と感じても、その後は本棚にしまいっぱなしということはないでしょうか。Books Changeなら他の人に送ることができます。</p>
               </div>
               <div class="pic">
                 <img src="img/keep_or_not.jpg" alt="keep_or_not">
@@ -72,7 +72,7 @@
                 <h3 class="content-title">
                   選べるジャンル
                 </h3>
-                <p>情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。とかくに人の世は住みにくい。意地を</p>
+                <p>人には好みがあります。全く興味がない本を受け取ることがないように、Books Changeなら受け取る本のジャンルを指定できます。</p>
               </div>
               <div class="pic">
                 <img src="img/genre.jpg" alt="genre">
@@ -83,7 +83,8 @@
                 <h3 class="content-title">
                   読み放題/1冊から
                 </h3>
-                <p>情に棹させば流される。智に働けば角が立つ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。とかくに人の世は住みにくい。意地を</p>
+                <p>本を読むことがライフワークの方も、なんだか急に紙の本が読みたくなった方も、Books Changeならどちらも適正価格でご利用いただけます。５冊まで 2000円～、1冊 500円～。
+                </p>
               </div>
               <div class="pic">
                 <img src="img/one_or_many.jpg" alt="one_or_many">
@@ -98,6 +99,21 @@
         </div>
       </main>
     </div> <!--container-->
+
+    <!-- メニューモーダル -->
+
+    <div id ="menu-modal" class="menu-modal-wrapper">
+      <div class="close-modal">
+        <span class="close-btn white-close"></span>
+      </div>
+      <div class="menus">
+        <ul>
+          <li><a class="go-top">GO TO TOP</a></li>
+          <li><a class="scroll-btn" href="#about">ABOUT</a></li>
+          <li><a class="scroll-btn" href="#features">FEATURES</a></li>
+        </ul>
+      </div>
+    </div>
 
     <!-- モーダル部分 -->
     <div id ="signup-modal" class="signup-modal-wrapper">
@@ -134,6 +150,12 @@
       </div>
     </div>
     <!-- モーダルここまで -->
+
+    <!-- ハンバーガーメニュー -->
+    <div class="hamburger-menu menu-show">
+      <label for="menu-btn-check" class="menu-btn"><span></span></label>
+  </div>
+    <!-- ハンバーガーメニュー ここまで-->
 
     <footer id="footer">
       <div class="inner">

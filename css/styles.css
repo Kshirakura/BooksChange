@@ -14,7 +14,7 @@ body {
   font-size: 0.875rem;
   color: #273469;
   /* color dark#273469  lightegray #CDD7D6  bage #B3A394 accent #f87060*/
-  background: #fffff0;
+  background: #FFFFE0;
   position: relative;
   font-family: 'Spartan','Kosugi', sans-serif;
   letter-spacing: 0.05rem;
@@ -22,6 +22,7 @@ body {
 
 img {
   width: 100%;
+  vertical-align: bottom;
 }
 
 a {
@@ -68,22 +69,20 @@ header
 }
 
 #header .site-title {
-  position: absolute;
+  position: fixed;
   top: 7.5vh;
   z-index: 100;
   left: 10%;
-  font-family: 'Balsamiq Sans', cursive;
-  font-size: 6rem;
-  font-weight: lighter;
-  color: #273469;
-  /* background: rgba(235, 235, 211, 0.); */
-  /* padding: 30px 40px; */
-  /* border-radius: 10px; */
-  white-space: nowrap;
-} 
+  width: 600px;
+  cursor: pointer;
+}
 
-#header .site-title span {
-  color: #f87060;
+#header .site-title:hover {
+  opacity: 0.8;
+}
+
+#header .menu-show {
+  display: block;
 }
 
 #header ul {
@@ -95,12 +94,12 @@ header
 
 #header li {
   padding: 30px 60px;
-  color: #fffff0;
+  color: #FFFFE0;
   background: #273469;
   border-radius: 3px;
   cursor: pointer;
   white-space: nowrap;
-  
+  box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #header li:hover {
@@ -116,21 +115,50 @@ header
 
 #header .copy {
   position: absolute;
-  writing-mode: vertical-rl;
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  top: 30vh;
-  right: 18%;
-  color: #333;
-  font-size: 4rem;
+  color: #FFFFF0;
+  top: 23vh;
+  left: 10%;
+  font-size: 2rem;
   line-height: 1.8;
   white-space: nowrap;
   font-family: 'M PLUS Rounded 1c', sans-serif;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
 }
+
+
 
 /* ---------------
 モーダル
 -----------------*/
+#menu-modal {
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: -300px;
+  height: 100vh;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#menu-modal ul{
+  padding-top: 60px;
+  width: 50%;
+  margin: 0 auto;
+  
+}
+
+#menu-modal li {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#menu-modal li a {
+  color: #FFFFE0;
+}
+
+
+
 .signup-modal-wrapper {
   background: #333;
   background-color: rgba(0, 0, 0, 0.6);
@@ -150,7 +178,7 @@ header
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #fffff0;
+  background-color: #FFFFE0;
   padding: 20px 0 40px;
   border-radius: 10px;
   width: 450px;
@@ -218,6 +246,10 @@ header
   cursor: pointer;
 }
 
+.white-close {
+  color: #FFFFE0;
+}
+
 .close-btn::before {
   content: '';
   position: absolute;
@@ -230,14 +262,50 @@ header
   transform: rotate(90deg);
 }
 
+/* ---------------
+ハンバーガーメニュー
+-----------------*/
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: none;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: #f87060;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #FFFFE0;
+  position: absolute;
+}
+.menu-btn span:before {
+  bottom: 8px;
+}
+.menu-btn span:after {
+  top: 8px;
+}
+
 
 /* ---------------
 about
 -----------------*/
 #about {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: inset 8px 8px 16px #e0e0c5,
+            inset -8px -8px 16px #fffffb;
 }
 
 #about .content-title {
@@ -271,6 +339,10 @@ features
 #features .text {
   width: 45%;
   line-height: 2;
+  box-shadow: inset 8px 8px 16px #e0e0c5,
+            inset -8px -8px 16px #fffffb;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 #features .pic {
@@ -278,7 +350,8 @@ features
 }
 
 #features .pic img {
-  border-radius: 5%;
+  border-radius: 20%;
+
 }
 
 #features .content-title {
@@ -308,6 +381,9 @@ start-btn
 .start-btn:hover {
   opacity: 0.8;
 }
+
+
+
 /* ---------------
 footer
 -----------------*/
@@ -316,6 +392,7 @@ footer
   color: beige;
   text-align: center;
   padding-top: 60px;
+  box-shadow: -2px 0 1px rgba(0, 0, 0, 0.3);
 }
 
 #footer ul {
@@ -329,18 +406,20 @@ footer
   white-space: nowrap;
 }
 
+
 /* ---------------
 SP
 -----------------*/
 
 
 @media screen and (max-width: 1024px) {
+
+  .menu-btn {
+    display: flex;
+  }
+
   #header .site-title {
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    font-size: 12vw;
+    position: absolute;
   }
   
   #header ul {
@@ -352,18 +431,26 @@ SP
   }
 
   #header .copy {
-    font-size: 5vw;
-    top:35vh;
-    right: 20%;
-    color: #fffff0;
+    top: 16vh;
+    color: #444;
   }
+
+  #about, #features .text {
+    box-shadow: inset 8px 8px 16px #f0f0d3,
+  inset -8px -8px 16px #ffffed;
+  }
+
 }
 
 @media screen and (max-width: 767px) {
+
   
+
   /* ---------------
   モーダル
   -----------------*/
+
+  
   
   .modal {
 
@@ -443,7 +530,32 @@ SP
     transform: rotate(90deg);
   }
 
+  /* -----------
+  ハンバーガーメニュー
+  ------------ */
 
+  .menu-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 17px;
+  border-radius: 3px;
+  background-color: #FFFFE0;
+  position: absolute;
+}
+.menu-btn span:before {
+  bottom: 6px;
+}
+.menu-btn span:after {
+  top: 6px;
+}
   
   #features .flex-items {
     flex-direction: column-reverse;
@@ -454,11 +566,7 @@ SP
   }
 
   #header .site-title {
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    font-size: 12vw;
+    width: 270px;
   }
 
   #header ul {
@@ -486,10 +594,8 @@ SP
   }
 
   #header .copy {
-    font-size: 1.5rem;
-    top:30vh;
-    right: 20vw;
-    color: #fffff0;
+    font-size: 1rem;
+    top:17vh;
   }
 
   #about {
