@@ -50,8 +50,6 @@ p {
 /* ---------------
 ここから個別css 
 -----------------*/
-
-
 /* ---------------
 header
 -----------------*/
@@ -69,7 +67,7 @@ header
 }
 
 #header .site-title {
-  position: fixed;
+  position: absolute;
   top: 7.5vh;
   z-index: 100;
   left: 10%;
@@ -295,6 +293,35 @@ header
   top: 8px;
 }
 
+/* ---------------
+上に戻るボタン
+-----------------*/
+
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 14px;
+  line-height: 1;
+  z-index: 99;
+}
+#page-top a {
+  background: #f87060;
+  text-decoration: none;
+  color: #fff;
+  width: 60px;
+  padding: 28px 5px;
+  text-align: center;
+  display: block;
+  border-radius: 90px;
+  opacity: 0.9;
+  transition: all .3s ease;
+}
+#page-top a:hover {
+  text-decoration: none;
+  opacity: .5;
+}
+
 
 /* ---------------
 about
@@ -373,7 +400,7 @@ start-btn
   padding: 30px;
   background: #f87060;
   color: beige;
-  margin-bottom: 120px;
+  margin-bottom: 30px;
   border-radius: 3%;
   cursor: pointer;
 }
@@ -382,6 +409,18 @@ start-btn
   opacity: 0.8;
 }
 
+
+/* ---------------
+sns-btn
+-----------------*/
+.sns-btn {
+  margin-bottom: 60px;
+  justify-content: center;
+}
+
+.sns-btn div {
+  margin-right: 10px;
+}
 
 
 /* ---------------
@@ -438,6 +477,10 @@ SP
   #about, #features .text {
     box-shadow: inset 8px 8px 16px #f0f0d3,
   inset -8px -8px 16px #ffffed;
+  }
+
+  #page-top {
+    display: none;
   }
 
 }
@@ -501,34 +544,6 @@ SP
   }
   
   
-  
-  .close-btn {
-    display: inline-block;
-    vertical-align: middle;
-    color: #273469;
-    line-height: 1;
-    width: 1.5em;
-    height: 0.3em;
-    background: currentColor;
-    border-radius: 0.1em;
-    position: absolute;
-    top: 18px;
-    right: 12px;
-    transform: rotate(45deg);
-    cursor: pointer;
-  }
-  
-  .close-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    border-radius: inherit;
-    transform: rotate(90deg);
-  }
 
   /* -----------
   ハンバーガーメニュー

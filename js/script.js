@@ -1,4 +1,5 @@
 $(function() {
+  
   $('.signup-show').click(function() {
     $('#signup-modal').fadeIn();
   });
@@ -28,8 +29,6 @@ $(function() {
     }, 300);
   });
 
-
-
   $('.close-btn').click(function() {
     $('#signup-modal').fadeOut();
     $('#login-modal').fadeOut();
@@ -50,6 +49,18 @@ $(function() {
   }
   );
 
-  
+  var pagetop = $('#page-top');
+  pagetop.hide();
+  $(window).scroll(function () {
+     if ($(this).scrollTop() > 100) {
+          pagetop.fadeIn();
+     } else {
+          pagetop.fadeOut();
+     }
+  });
+  pagetop.click(function () {
+     $('body, html').animate({ scrollTop: 0 }, 500);
+     return false;
+  });
 
 });
