@@ -11,7 +11,7 @@ $(function() {
 
   $('.menu-show').click(function() {
     $('#menu-modal').animate({
-      left: 0
+      right: 0
   },300);
   });
 
@@ -33,7 +33,7 @@ $(function() {
     $('#signup-modal').fadeOut();
     $('#login-modal').fadeOut();
     $('#menu-modal').animate({
-      left: -300
+      right: -300
   },300);
   });
 
