@@ -172,7 +172,7 @@ hero
 .hero_btns {
   position:absolute;
   bottom: 10%;
-  left: 14%;
+  left: 12%;
 }
 
 .hero_btns ul {
@@ -425,8 +425,8 @@ header
   top: 10px;
   right: 10px;
   /* display: none; */
-  height: 70px;
-  width: 70px;
+  height: 40px;
+  width: 40px;
   justify-content: center;
   align-items: center;
   z-index: 90;
@@ -438,8 +438,8 @@ header
 .menu-btn span:after {
   content: '';
   display: block;
-  height: 4px;
-  width: 30px;
+  height: 2px;
+  width: 22px;
   /* border-radius: 3px; */
   background-color: #273469;
   position: absolute;
@@ -448,11 +448,11 @@ header
   transform: translate(-50%, -50%);
 }
 .menu-btn span:before {
-  top: 14px;
+  top: 9px;
   
 }
 .menu-btn span:after {
-  top: -10px;
+  top: -7px;
 }
 
 /* ---------------
@@ -576,7 +576,12 @@ SP
   }
 
   .copy {
-    display: none;
+    top: 75%;
+    left: 52%;
+    background: #273469;
+    color: #fff;
+    padding-left: 2vw;
+    width: 45%;
   }
   
   .site_title_pc {
@@ -588,6 +593,8 @@ SP
     position: absolute;
     top: 1%;
     left: 3%;
+    width: 70%;
+    background: transparent;
   }
 
   .sub {
@@ -599,7 +606,7 @@ SP
 
   .hero_btns {
     position:absolute;
-    bottom: 5%;
+    bottom: 3.5%;
     left:50%;
     transform: translateX(-50%);
   }
