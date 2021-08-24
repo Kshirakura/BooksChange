@@ -559,6 +559,11 @@ footer
   white-space: nowrap;
 }
 
+#footer a:link,
+#footer a:link  {
+  color: #fff;
+}
+
 
 /* ---------------
 SP

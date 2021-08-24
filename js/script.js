@@ -6,6 +6,8 @@ $(function() {
         userAgent.indexOf('trident') != -1) {
           $('.twitter-share-button').hide();
         }
+
+  objectFitImages()
   
   $('.signup-show').click(function() {
     $('#signup-modal').fadeIn();
