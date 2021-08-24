@@ -132,6 +132,7 @@ hero
   top: 5%;
   right: 3%;
   box-shadow: 150px -130px 0 -100px #ffe9f7;
+  cursor: pointer;
 }
 
 .hero_text {
@@ -312,7 +313,7 @@ header
 }
 
 #menu-modal li a {
-  color: #FFFFE0;
+  color: #fff;
 }
 
 
@@ -336,7 +337,7 @@ header
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #FFFFE0;
+  background-color: #fff;
   padding: 20px 0 40px;
   border-radius: 10px;
   width: 450px;
@@ -367,7 +368,7 @@ header
 #submit-btn {
   display: inline-block;
   padding: 14px 140px;
-  background-color: #f87060;
+  background-color: #273469;
   border: none;
   border-radius: 3px;
   color: white;
@@ -405,7 +406,7 @@ header
 }
 
 .white-close {
-  color: #FFFFE0;
+  color: #fff;
 }
 
 .close-btn::before {
@@ -592,6 +593,11 @@ SP
     font-size: calc((1.2vh + 1.5vw) /2);
     max-width: 400px;
   }
+
+  .site_title_sp:hover,
+  .site_title_pc:hover {
+    opacity: 0.8
+  }
   
   .site_title_pc {
     display: none;
@@ -605,6 +611,7 @@ SP
     width: 70%;
     background: transparent;
     max-width: 300px;
+    cursor: pointer;
   }
 
   .sub {
@@ -774,6 +781,7 @@ SP
   .menu-btn {
     width: 30px;
     height: 30px;
+    cursor:pointer;
   }
 
   .menu-btn span,
@@ -784,7 +792,7 @@ SP
   height: 2px;
   width: 18px;
   border-radius: 3px;
-  /* background-color: #FFFFE0; */
+  /* background-color: #fff; */
   position: absolute;
 }
 .menu-btn span:before {
