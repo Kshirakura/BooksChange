@@ -20,6 +20,7 @@ body {
   font-family: 'Spartan','Kosugi', sans-serif;
   letter-spacing: 0.05rem;
   line-height: 3.5rem;
+  -webkit-text-size-adjust: 100%;
 }
 
 img {
@@ -187,6 +188,7 @@ hero
   cursor: pointer;
   white-space: nowrap;
   box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 1.2vw;
 }
 
 .hero_btns li:hover {
@@ -194,7 +196,7 @@ hero
 }
 
 .hero_btns li:last-child {
-  margin-left:6vw;
+  margin-left:8vw;
   background: #fff;
   color: #273469;
   border: solid 1px #273469;
@@ -390,8 +392,8 @@ header
   vertical-align: middle;
   color: #273469;
   line-height: 1;
-  width: 2.1em;
-  height: 0.3em;
+  width: 1.4em;
+  height: 0.1em;
   background: currentColor;
   border-radius: 0.1em;
   position: absolute;
@@ -580,9 +582,10 @@ SP
     left: 40%;
     background: #273469;
     color: #fff;
-    padding-left: 2vw;
-    width: 50%;
-    white-space: nowrap
+    padding: 2vw 2vw 2vw 3vw;
+    width: 57.5%;
+    white-space: nowrap;
+    font-size: 2.7vw;
   }
   
   .site_title_pc {
@@ -611,6 +614,7 @@ SP
     bottom: 3.5%;
     left:50%;
     transform: translateX(-50%);
+    
   }
   
   .hero_btns ul {
@@ -625,6 +629,7 @@ SP
     cursor: pointer;
     white-space: nowrap;
     box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 4vw;
   }
 
   .hero_btns li:last-child {
