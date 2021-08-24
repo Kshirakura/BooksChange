@@ -528,9 +528,13 @@ sns-btn
   line-height: 0;
 }
 
-.sns-btn div {
-  margin-right: 10px;
+.sns div {
+  line-height: 0;
+  display: inline;
 }
+
+
+
 
 /* ---------------
 footer
