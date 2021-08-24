@@ -135,7 +135,6 @@ hero
   background-size: cover;
   background-position: center;
   box-shadow: 150px -130px 0 -100px #ffe9f7;
-  cursor: pointer;
 }
 
 .hero_text {
@@ -438,6 +437,7 @@ header
   align-items: center;
   z-index: 90;
   background-color: #fff;
+  cursor: pointer
   /* background-color: ; */
 }
 .menu-btn span,
@@ -562,8 +562,9 @@ footer
   white-space: nowrap;
 }
 
+#footer a,
 #footer a:link,
-#footer a:link  {
+#footer a:visited  {
   color: #fff;
 }
 
