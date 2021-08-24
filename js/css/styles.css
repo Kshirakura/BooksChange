@@ -1,0 +1,821 @@
+@charset "utf-8";
+
+/* google-font */
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Kosugi&family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+/* google-font */
+
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 2rem;
+  color: #273469;
+  /* color dark#273469  lightegray #CDD7D6  bage #B3A394 accent #f87060*/
+  background: #fdfdfd;
+  position: relative;
+  font-family: 'Spartan','Kosugi', sans-serif;
+  letter-spacing: 0.05rem;
+  line-height: 3.5rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+.flex-items {
+  display: flex;
+}
+
+p {
+  margin:0;
+}
+
+.title {
+  margin-bottom: 60px;
+  position: relative;
+  display: inline-block;
+  font-size: 3.6rem;
+}
+
+.title:before {
+  content: '';
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: solid 10px #f87060;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%) rotate(-10deg);
+  transform: translate(-50%,-50%) rotate(-10deg);
+  position: absolute;
+  /* bottom: 1.5rem; */
+  z-index: -1;
+  background: none;
+  opacity: 0.2;
+  /* box-shadow: 5px 10px 20px; */
+}
+
+.feature .desc {
+  position: relative;
+}
+
+.feature .desc:after {
+  content: attr(data-en);
+  position: absolute;
+  right: -20px;
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  z-index: -1;
+  color: rgba(248, 112, 96, 0.2);
+  font-size: 10rem;
+  font-family: 'Allison', cursive;
+}
+
+/* ---------------
+ここから個別css 
+-----------------*/
+/* ---------------
+hero
+-----------------*/
+.hero {
+  height: 100vh;
+  background: #fff;
+  /* background-image: url("../img/mainvisual.jpg"); */
+}
+
+.hero_container {
+  /* padding-top: 120px; */
+  position: relative;
+  height: 100%;
+}
+
+.hero_image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+/* .hero_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.hero_image .sp {
+  display: none;
+}
+
+.hero_image .pc {
+  background-image: url(../img/main-pc.jpg);
+  position: absolute;
+  width: 70%;
+  height: 90%;
+  top: 5%;
+  right: 3%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 150px -130px 0 -100px #ffe9f7;
+  cursor: pointer;
+}
+
+.hero_text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  font-family: 'Hina Mincho', serif;
+}
+
+.site_title_sp {
+  display: none;
+}
+
+.site_title_pc{
+  position: absolute;
+  top: 43%;
+  left: 9%;
+  width: 40%;
+}
+
+.sub {
+  position: absolute;
+  top: 58%;
+  left: 9.5%;
+  width: 40%;
+  font-size: min(1.2vw, 2rem);
+  color: #273469;
+}
+
+
+.copy {
+  position: absolute;
+  top: 18%;
+  left: 9.5%;
+  width: 40%;
+  font-size: 1.9vh;
+  font-family: 'Hina Mincho', serif;
+}
+
+.hero_btns {
+  position:absolute;
+  bottom: 10%;
+  left: 12%;
+}
+
+.hero_btns ul {
+  display: flex;
+}
+
+.hero_btns li {
+  padding: 1.5vw 2.7vw;
+  color: #fff;
+  background: #273469;
+  border-radius: 3px;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 1.2vw;
+}
+
+.hero_btns li:hover {
+  opacity: 0.9
+}
+
+.hero_btns li:last-child {
+  margin-left:8vw;
+  background: #fff;
+  color: #273469;
+  border: solid 1px #273469;
+  border-radius: 3%;
+  cursor: pointer;
+}
+
+/* ---------------
+about
+-----------------*/
+.about {
+
+}
+
+.about_container {
+  margin-top:150px;
+  margin-bottom: 210px;
+  padding: 30px;
+}
+
+
+.about_container .title {
+  position: relative;
+}
+
+.about_container .title:after {
+  content: attr(data-en);
+  position: absolute;
+  top: -60px;
+  left: 0;
+  font-size: 16rem;
+  font-family: 'Allison', cursive;
+  opacity: 0.2;
+  color: #f87060;
+}
+
+.about_container .title:before {
+  display: none;
+}
+
+/* -------#--------
+features
+-----------------*/
+.features {
+  
+}
+
+.features_container {
+  padding: 60px 30px;
+}
+
+.feature {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 210px;
+}
+
+.feature:nth-child(odd) {
+  flex-direction: row-reverse
+}
+
+.feature .text {
+  width: 45%;
+}
+
+.feature .image {
+  width: 45%;
+}
+
+.feature .image img {
+  border-radius: 5%;
+  position: relative;
+  box-shadow: 1px 2px 10px #999;;
+}
+
+
+
+
+/* ---------------
+header
+-----------------*/
+
+
+
+
+/* ---------------
+モーダル
+-----------------*/
+#menu-modal {
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  right: -300px;
+  height: 100vh;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#menu-modal ul{
+  padding-top: 60px;
+  width: 50%;
+  margin: 0 auto;
+  
+}
+
+#menu-modal li {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#menu-modal li a {
+  color: #fff;
+}
+
+
+
+.signup-modal-wrapper {
+  background: #333;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 5vh;
+  left:5vw;
+  width: 90vw;
+  height: 90vh;
+  display: none;
+  z-index: 999;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.signup-form {
+  width: 100%;
+}
+
+.signup-form h2 {
+  color: #273469;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.signup-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #273469;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+#login-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #273469;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+
+
+.close-btn {
+  display: inline-block;
+  vertical-align: middle;
+  color: #273469;
+  line-height: 1;
+  width: 1.4em;
+  height: 0.1em;
+  background: currentColor;
+  border-radius: 0.1em;
+  position: absolute;
+  top: 24px;
+  right: 12px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.white-close {
+  color: #fff;
+}
+
+.close-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: inherit;
+  transform: rotate(90deg);
+}
+
+/* ---------------
+ハンバーガーメニュー
+-----------------*/
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  /* display: none; */
+  height: 40px;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: #fff;
+  /* background-color: ; */
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 22px;
+  /* border-radius: 3px; */
+  background-color: #273469;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.menu-btn span:before {
+  top: 9px;
+  
+}
+.menu-btn span:after {
+  top: -7px;
+}
+
+/* ---------------
+上に戻るボタン
+-----------------*/
+
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 14px;
+  line-height: 1;
+  z-index: 99;
+}
+#page-top a {
+  background: #273469;
+  text-decoration: none;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  padding: 25px 5px;
+  /* transform: translateY(-50%); */
+  text-align: center;
+  display: block;
+  border-radius: 90px;
+  opacity: 0.9;
+  transition: all .3s ease;
+}
+#page-top a:hover {
+  text-decoration: none;
+  opacity: .5;
+}
+
+
+/* ---------------
+about
+-----------------*/
+
+
+/* ---------------
+features
+-----------------*/
+
+/* ---------------
+start-btn 
+-----------------*/
+.start-btn {
+  text-align: center;
+  margin: 0 auto;
+  width: 210px;
+  padding: 30px;
+  background: #273469;
+  color: #fff;
+  margin-bottom: 30px;
+  border-radius: 3%;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  opacity: 0.8;
+}
+
+
+/* ---------------
+sns-btn
+-----------------*/
+.sns {
+  text-align: center;
+  margin-bottom: 60px;
+  line-height: 0;
+}
+
+.sns div {
+  line-height: 0;
+  display: inline;
+}
+
+
+
+
+/* ---------------
+footer
+-----------------*/
+#footer {
+  background:#273469;
+  color: #fff;
+  text-align: center;
+  padding-top: 30px;
+  box-shadow: -2px 0 1px rgba(0, 0, 0, 0.3);
+}
+
+#footer ul {
+  margin-bottom: 60px;
+  margin-right: 20px;
+}
+
+#footer li {
+  margin-bottom: 12px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+#footer a:link,
+#footer a:visited  {
+  color: #fff;
+}
+
+
+/* ---------------
+SP
+-----------------*/
+
+
+@media screen and (max-width: 1024px) {
+
+  /* ---------------
+  HERO
+  -----------------*/
+
+  .hero_image .pc {
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 70%;
+    top: 5%;
+    left: 5%;
+  }
+
+
+  .copy {
+    top: 65%;
+    left: auto;
+    right: 3%;
+    background: #273469;
+    color: #fff;
+    padding: 2vh 2vh 2vh 3vh;
+    width: auto;
+    white-space: nowrap;
+    font-size: calc((1.2vh + 1.5vw) /2);
+    max-width: 400px;
+  }
+
+  .site_title_sp:hover,
+  .site_title_pc:hover {
+    opacity: 0.8
+  }
+  
+  .site_title_pc {
+    display: none;
+  }
+
+  .site_title_sp {
+    display: block;
+    position: absolute;
+    top: 1%;
+    left: 3%;
+    width: 70%;
+    background: transparent;
+    max-width: 300px;
+    cursor: pointer;
+  }
+
+  .sub {
+    top: 12%;
+    left: 7%;
+    font-size: 3.5vmin;
+    width: 55%;
+    white-space: nowrap;
+    max-width: 270px;
+  }
+
+  .hero_btns {
+    position:absolute;
+    top: 80%;
+    left:50%;
+    transform: translateX(-50%);
+    
+  }
+  
+  .hero_btns ul {
+    display: flex;
+  }
+  
+  .hero_btns li {
+    padding: min(2vh, 30px) min(3vh, 40px);
+    color: #fff;
+    background: #273469;
+    border-radius: 3px;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: min(4vh, 2rem);
+  }
+
+  .hero_btns li:last-child {
+    margin-left: 8vw;
+  }
+
+  .container {
+    width: 90%;
+    padding:60px 30px;
+  }
+
+  .about_container .title:after {
+    font-size: 12rem;
+  }
+
+  .features_container .title {
+    font-size: 2.1rem;
+  }
+
+  
+
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .hero_container {
+    padding:0;
+  }
+
+  .hero_image .pc {
+    display: none;
+  }
+
+  .hero_image .sp {
+    background-image: url(../img/main-sp.jpg);
+    background-size: cover;
+    background-position: center;
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 73%;
+    top: 5%;
+    left: 5%;
+  }
+
+  .site_title {
+    width: 100%;
+  }
+  
+  
+  .hero_btns {
+    display: block;
+    bottom: 10%;
+  }
+
+  .title {
+    font-size: 2.1rem;
+  }
+
+  .about_container {
+    margin-bottom: 120px;
+  }
+
+  .feature {
+    display: block;
+  }
+
+  .feature .image,
+  .feature .text {
+    width: 100%;
+  }
+
+  .feature .image {
+    margin-bottom: 90px;
+  }
+
+  .start-btn {
+    padding: 20px;
+    font-size: 1.8rem;
+    
+  }
+  
+  
+  .modal {
+    width: 70vw;
+  }
+  
+  .signup-form {
+    width: 100%;
+  }
+  
+  .signup-form h2 {
+    color: #273469;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  .signup-form input {
+    width: 55vw;
+    margin-bottom: 20px;
+    font-size: 12px;
+    padding: 12px 12px;
+    border: 1px solid #d0d5d8;
+    border-radius: 5px;
+  }
+  
+  #submit-btn {
+    display: inline-block;
+    padding: 14px 14px;
+    background-color: #273469;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: 10px auto;
+    cursor: pointer;
+  }
+  
+  #login-btn {
+    display: inline-block;
+    padding: 14px 14px;
+    background-color: #273469;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: 10px auto;
+    cursor: pointer;
+  }
+  
+  
+
+  /* -----------
+  ハンバーガーメニュー
+  ------------ */
+
+  .menu-btn {
+    width: 30px;
+    height: 30px;
+    cursor:pointer;
+  }
+
+  .menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 18px;
+  border-radius: 3px;
+  /* background-color: #fff; */
+  position: absolute;
+}
+.menu-btn span:before {
+  top: -6px;
+}
+.menu-btn span:after {
+  top: 8px;
+}
+
+
+  #footer li {
+    font-size: 1rem;
+    white-space:normal;
+  }
+}
