@@ -577,11 +577,11 @@ SP
 
   .copy {
     top: 75%;
-    left: 52%;
+    left: 40%;
     background: #273469;
     color: #fff;
     padding-left: 2vw;
-    width: 45%;
+    width: 50%;
   }
   
   .site_title_pc {
@@ -601,7 +601,7 @@ SP
     top: 10%;
     left: 7%;
     font-size: 3.5vw;
-    width: 50%;
+    width: 55%;
   }
 
   .hero_btns {
