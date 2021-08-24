@@ -154,10 +154,11 @@ hero
 
 .sub {
   position: absolute;
-  top: 60%;
+  top: 58%;
   left: 9.5%;
   width: 40%;
-  font-size: 1.2vw;
+  font-size: min(1.2vw, 2rem);
+  color: #273469;
 }
 
 
@@ -166,7 +167,7 @@ hero
   top: 18%;
   left: 9.5%;
   width: 40%;
-  font-size: 1.9vw;
+  font-size: 1.9vh;
   font-family: 'Hina Mincho', serif;
 }
 
@@ -564,11 +565,8 @@ SP
   /* ---------------
   HERO
   -----------------*/
-  .hero_image .pc {
-    display: none;
-  }
 
-  .hero_image .sp {
+  .hero_image .pc {
     display: block;
     position: absolute;
     width: 90%;
@@ -577,15 +575,18 @@ SP
     left: 5%;
   }
 
+
   .copy {
     top: 65%;
-    left: 40%;
+    left: auto;
+    right: 3%;
     background: #273469;
     color: #fff;
-    padding: 2vw 2vw 2vw 3vw;
-    width: 57.5%;
+    padding: 2vh 2vh 2vh 3vh;
+    width: auto;
     white-space: nowrap;
-    font-size: 2.5vw;
+    font-size: calc((1.2vh + 1.5vw) /2);
+    max-width: 400px;
   }
   
   .site_title_pc {
@@ -599,19 +600,21 @@ SP
     left: 3%;
     width: 70%;
     background: transparent;
+    max-width: 300px;
   }
 
   .sub {
-    top: 10%;
+    top: 12%;
     left: 7%;
-    font-size: 3.5vw;
+    font-size: 3.5vmin;
     width: 55%;
     white-space: nowrap;
+    max-width: 270px;
   }
 
   .hero_btns {
     position:absolute;
-    bottom: 12.5%;
+    top: 80%;
     left:50%;
     transform: translateX(-50%);
     
@@ -622,14 +625,14 @@ SP
   }
   
   .hero_btns li {
-    padding: 3vw 6vw;
+    padding: min(2vh, 30px) min(3vh, 40px);
     color: #fff;
     background: #273469;
     border-radius: 3px;
     cursor: pointer;
     white-space: nowrap;
     box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.2);
-    font-size: 4vw;
+    font-size: min(4vh, 2rem);
   }
 
   .hero_btns li:last-child {
@@ -660,6 +663,19 @@ SP
     padding:0;
   }
 
+  .hero_image .pc {
+    display: none;
+  }
+
+  .hero_image .sp {
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 73%;
+    top: 5%;
+    left: 5%;
+  }
+
   .site_title {
     width: 100%;
   }
@@ -667,7 +683,9 @@ SP
   
   .hero_btns {
     display: block;
+    bottom: 10%;
   }
+
   .title {
     font-size: 2.1rem;
   }
@@ -724,7 +742,7 @@ SP
   #submit-btn {
     display: inline-block;
     padding: 14px 14px;
-    background-color: #f87060;
+    background-color: #273469;
     border: none;
     border-radius: 3px;
     color: white;
