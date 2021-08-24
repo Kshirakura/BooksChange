@@ -572,13 +572,13 @@ SP
     display: block;
     position: absolute;
     width: 90%;
-    height: 80%;
+    height: 70%;
     top: 5%;
     left: 5%;
   }
 
   .copy {
-    top: 75%;
+    top: 65%;
     left: 40%;
     background: #273469;
     color: #fff;
@@ -611,7 +611,7 @@ SP
 
   .hero_btns {
     position:absolute;
-    bottom: 3.5%;
+    bottom: 12.5%;
     left:50%;
     transform: translateX(-50%);
     
@@ -641,9 +641,15 @@ SP
     padding:60px 30px;
   }
 
-  .features_container .title {
-    font-size: 2.4rem;
+  .about_container .title:after {
+    font-size: 12rem;
   }
+
+  .features_container .title {
+    font-size: 2.1rem;
+  }
+
+  
 
 
 }
