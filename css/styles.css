@@ -162,6 +162,7 @@ hero
   width: 40%;
   font-size: min(1.2vw, 2rem);
   color: #273469;
+  text-shadow:1px 1px 1px #fff; 
 }
 
 
@@ -626,7 +627,8 @@ SP
   .sub {
     top: 12%;
     left: 7%;
-    font-size: 3.5vmin;
+    font-size: 4.5vmin;
+    line-height: 7vmin;
     width: 55%;
     white-space: nowrap;
     max-width: 270px;
